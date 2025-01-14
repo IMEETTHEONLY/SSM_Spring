@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring_01_quikstart/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_02_base_config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_03_instance/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_04_bean_lifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_06_di_constructor/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_07_di_autoware/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_09_datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_11_annotation_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_11_All_annotation_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_12_annotation_di/pom.xml" />
+        <option value="$PROJECT_DIR$/../../spring_13_annotation_third_bean_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_13_annotation_third_bean_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_13_spring_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_14_spring_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_13_spring_mybatis(原始开发)/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_14_spring_mybatis/spring_15_spring_junit/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_15_spring_junit/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_16_aop_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_17_aop_type/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_case_run_speed/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_18_aop_data/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_19_handle_password/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring_13_spring_mybatis(原始开发)/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_14_annotation_third_bean_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_14_spring_mybatis/spring_15_spring_junit/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

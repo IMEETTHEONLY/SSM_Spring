@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--        1.通过构造方法实例化-->
+<!--        配置初始化方法和销毁方法-->
+        <bean id="bookdaoImpl" class="com.spring.dao.impl.BookDaoImpl" init-method="init" destroy-method="destroy"></bean>
+
+        <bean id="bookService" class="com.spring.service.impl.BookServiceImpl">
+<!--                //配置属性-->
+                <property name="bookDao" ref="bookdaoImpl"></property>
+        </bean>
+
+</beans>

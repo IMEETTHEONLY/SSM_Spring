@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    1.这里要先在maven当中导入spring的坐标，即它的jar包-->
+
+<!--    2.配置bean-->
+
+<!--        id是拿到bean的途径，相当于bean的名字-->
+<!--            class是当前bean是哪一个类-->
+        <bean id="bookDao" class="com.spring.dao.impl.BookDaoImpl"></bean>
+
+<!--        要往哪个类中注入对象，就在哪个bean中配置  这里要把dao注入service-->
+        <bean id="bookServiceImpl" class="com.spring.service.impl.BookServiceImpl" autowire="byType"/>
+
+
+
+</beans>

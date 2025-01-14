@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--        1.通过构造方法实例化-->
+<!--        配置初始化方法和销毁方法-->
+        <bean id="bookdaoImpl" class="com.spring.dao.impl.BookDaoImpl"></bean>
+        <bean id="coursedaoImpl" class="com.spring.dao.impl.CourseDaoImpl"></bean>
+
+        <bean id="bookService" class="com.spring.service.impl.BookServiceImpl">
+<!--                //配置构造器注入  这里的name属性是构造器当中的形参-->
+            <constructor-arg name="bookDao" ref="bookdaoImpl"></constructor-arg>
+            <constructor-arg name="courseDao" ref="coursedaoImpl"></constructor-arg>
+
+        </bean>
+
+</beans>

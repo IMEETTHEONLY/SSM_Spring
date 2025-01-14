@@ -1,0 +1,25 @@
+package com.spring;
+
+import com.spring.service.impl.BookServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class AppForName {
+    public static void main(String[] args) {
+        //先获取到spring的容器  参数是spring配置文件的名字
+        ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        //从ioc容器当中获取bean   可以通过name属性获取
+        BookServiceImpl bookServiceImpl = (BookServiceImpl) applicationContext.getBean("service");
+
+        //调用方法即可
+        bookServiceImpl.save();
+
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--        1.通过构造方法实例化-->
+        <bean id="bookdaoImpl" class="com.spring.dao.impl.BookDaoImpl"></bean>
+
+<!--        2.通过静态工厂方法实例化-->
+        <bean id="courseImpl" class="com.spring.fctory.CourseFactory" factory-method="getCourseDao"></bean>
+
+<!--        3.通过非静态工厂方法进行实例化-->
+<!--        先获取工厂bean，然后再根据工厂bean获取方法-->
+        <bean id="orderdao" class="com.spring.fctory.OrderFactory"></bean>
+
+<!--        再根据工厂bean获取工厂方法-->
+        <bean id="orderDaoImpl" factory-bean="orderdao" factory-method="getOrderDao"></bean>
+
+<!--        4.根据工厂bean获取，其实和第三种方法一致，他只是spring给了一个规范，因为第二章写起来比较麻烦-->
+        <bean id="orderDaoFactroyBean" class="com.spring.fctory.OrderFactoryBean"></bean>
+</beans>
